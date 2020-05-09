@@ -1,7 +1,13 @@
 function setup() {
-    delay(2000)
+    delayES8(2000)
         .then(() => alert('are you there god its me, 6ix9ine'))
         .catch((err) => console.log(err))
+}
+
+async function delayES8(time) {
+    await delay(time)
+
+    return
 }
 
 function delay(time) {
