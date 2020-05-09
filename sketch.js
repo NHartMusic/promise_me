@@ -7,10 +7,10 @@ function setup() {
 function delay(time) {
     return new Promise((resolve, reject) => {
         if (isNaN(time)) {
-            reject(new Error('that is not a number'))
+            reject(new Error('NEIN DAS IST EIN NAN'))
+        } else {
+            setTimeout(resolve, time)
         }
-
-        setTimeout(resolve, time)
     })
 }
 
